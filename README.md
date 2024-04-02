@@ -1,27 +1,52 @@
+<script src='https://meet.jit.si/external_api.js'></script>
+<div id="meet">
+</div>
+<script>
+    const domain = 'meet.jit.si';
+    const options = {
+        roomName: 'mvd_test',
+        width: 400,
+        height: 720,
+        parentNode: document.querySelector('#meet'),
+        lang: 'en',
+        userInfo: {
+            displayName: 'Fazullo Xidoyatov'
+        },
 
-<html itemscope itemtype="http://schema.org/Product" prefix="og: http://ogp.me/ns#" xmlns="http://www.w3.org/1999/html">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="content-type" content="text/html;charset=utf-8">
-    </head>
-    <body>
-        <script src="https://meet-e-huquqtartibot.unicon.uz/external_api.js"></script>
-        <script>
-            var domain = "meet.jit.si";
-            var options = {
-                roomName: "JitsiMeetAPIExample",
-                width: 1200,
-                height: 1200,
-                parentNode: undefined,
-                 configOverwrite: {
-                    defaultDevices: {}
-                },
-                interfaceConfigOverwrite: {}
-            }
-            var api = new JitsiMeetExternalAPI(domain, options);
-        </script>
-    </body>
-</html>
+        interfaceConfigOverwrite: {
+        SHOW_JITSI_WATERMARK: false
+        },
+
+        configOverwrite: {
+            defaultDevices: {}
+        },
+<!--        configOverwrite: {-->
+<!--            prejoinConfig: {-->
+<!--                  enabled: false-->
+<!--            },-->
+
+<!--        toolbarButtons: [-->
+<!--            'hangup'-->
+<!--        ],-->
+
+<!--        disable1On1Mode:false,-->
+
+<!--        p2p: {-->
+<!--            enabled: true-->
+<!--        },-->
+
+<!--            participantsPane: {-->
+<!--            enabled: false-->
+<!--            }-->
+
+<!--        },-->
+    };
+    const api = new JitsiMeetExternalAPI(domain, options);
+</script>
+
+
+
+
 
 
 
