@@ -13,7 +13,9 @@
                 width: 1200,
                 height: 1200,
                 parentNode: undefined,
-                configOverwrite: {},
+                 configOverwrite: {
+                    defaultDevices: {}
+                },
                 interfaceConfigOverwrite: {}
             }
             var api = new JitsiMeetExternalAPI(domain, options);
