@@ -1,52 +1,25 @@
 
-<script src='https://meet-e-huquqtartibot.unicon.uz/external_api.js'></script>
-
-<div id="meet">
-</div>
-
-<script>
-
-const domain = 'meet-e-huquqtartibot.unicon.uz';
-
-const options = {
-    roomName: 'mvd_test',
-    width: 700,
-    height: 700,
-    parentNode: document.querySelector('#meet'),
-    lang: 'en',
-    userInfo: {
-        displayName: 'Abdullo Xidoyatov'
-    },
-
-    interfaceConfigOverwrite: {
-	SHOW_JITSI_WATERMARK: false
-    },
- 
-    configOverwrite: {
-    	prejoinConfig: {
-      		enabled: false
-    	},
-
-	toolbarButtons: [
-		'hangup','microphone','camera','toggle-camera','videoquality'
-	],
-
-	disable1On1Mode:false,
-
-	p2p: {
-		enabled: true
-	},
-
-        participantsPane: {
-		enabled: false
-    	}
-
-    },
-
-};
-const api = new JitsiMeetExternalAPI(domain, options);
-
-</script>
+<html itemscope itemtype="http://schema.org/Product" prefix="og: http://ogp.me/ns#" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    </head>
+    <body>
+        <script src="https://meet-e-huquqtartibot.unicon.uz/external_api.js"></script>
+        <script>
+            var domain = "meet.jit.si";
+            var options = {
+                roomName: "JitsiMeetAPIExample",
+                width: 700,
+                height: 180,
+                parentNode: undefined,
+                configOverwrite: {},
+                interfaceConfigOverwrite: {}
+            }
+            var api = new JitsiMeetExternalAPI(domain, options);
+        </script>
+    </body>
+</html>
 
 
 
