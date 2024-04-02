@@ -10,8 +10,8 @@
             var domain = "meet.jit.si";
             var options = {
                 roomName: "JitsiMeetAPIExample",
-                width: 700,
-                height: 180,
+                width: 1200,
+                height: 1200,
                 parentNode: undefined,
                 configOverwrite: {},
                 interfaceConfigOverwrite: {}
