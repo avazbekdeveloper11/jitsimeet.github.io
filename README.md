@@ -1,17 +1,13 @@
 
-
-
-
-
-<script src='https://meet.jit.si/external_api.js'></script>
+<script src='https://meet-e-huquqtartibot.unicon.uz/external_api.js'></script>
 
 <div id="meet">
 </div>
 
-
 <script>
 
-const domain = 'meet.jit.si';
+const domain = 'meet-e-huquqtartibot.unicon.uz';
+
 const options = {
     roomName: 'mvd_test',
     width: 700,
@@ -19,7 +15,7 @@ const options = {
     parentNode: document.querySelector('#meet'),
     lang: 'en',
     userInfo: {
-        displayName: 'Fazullo Xidoyatov'
+        displayName: 'Abdullo Xidoyatov'
     },
 
     interfaceConfigOverwrite: {
@@ -32,7 +28,7 @@ const options = {
     	},
 
 	toolbarButtons: [
-		'hangup'
+		'hangup','microphone','camera','toggle-camera','videoquality'
 	],
 
 	disable1On1Mode:false,
@@ -46,15 +42,6 @@ const options = {
     	}
 
     },
-
-
-
-    
-
-
-   
-
-
 
 };
 const api = new JitsiMeetExternalAPI(domain, options);
